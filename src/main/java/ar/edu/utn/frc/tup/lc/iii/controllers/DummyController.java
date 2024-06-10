@@ -29,7 +29,7 @@ public class DummyController {
     }
 
     @PostMapping()
-    public ResponseEntity<DummyDto> createDummy(DummyDto dummyDto) {
+    public ResponseEntity<DummyDto> createDummy(@RequestBody DummyDto dummyDto) {
         Dummy dummy = dummyService.createDummy(null);
         return null;
     }
