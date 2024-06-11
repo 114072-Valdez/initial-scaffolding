@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
+@Table(name = "Dummies")
 public class DummyEntity {
 
     @Id
@@ -18,5 +19,4 @@ public class DummyEntity {
 
     @Column(name = "description")
     private String dummy;
-
 }
